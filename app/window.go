@@ -166,6 +166,7 @@ func NewWindow(options ...Option) *Window {
 	dims := decoStyle.Layout(gtx)
 	decoHeight := unit.Dp(dims.Size.Y)
 	defaultOptions := []Option{
+		Pos(-1, -1), // ******** RNW Added Pos (image.Point) to config 01.11.2023 *********
 		Size(800, 600),
 		Title("Gio"),
 		Decorated(true),
